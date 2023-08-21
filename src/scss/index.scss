@@ -1,5 +1,5 @@
 @import "./mixins.scss";
-
+@import "./varibles.scss";
 ///////////////////шрифты//////////////////////////
 @font-face {
 	font-family: "GT Walsheim Pro";
@@ -80,8 +80,6 @@
 	--text-grey: #cecece;
 	--input-grey: #757575;
 	--button-text: #242424;
-	--desc: 1320px;
-	--mob: 767px;
 }
 
 ////////////////////////обнуление/////////////////////////////////
@@ -99,6 +97,21 @@ body {
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
+	position: relative;
+
+	&::after {
+		content: "";
+		width: 414.902px;
+		height: 414.902px;
+		transform: rotate(11.969deg);
+		border-radius: 414.902px;
+		background: var(--linear-puprle);
+		filter: blur(86px);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
 }
 
 ul,
@@ -134,12 +147,12 @@ input::-webkit-inner-spin-button {
 ///////UI-Kit//////////////////////
 
 .container {
-	max-width: var(--desc);
+	max-width: $desc;
 	margin: 0 auto;
 	padding: 0 20px;
 
-	@media (max-width: var(--mob)) {
-		max-width: var(--mob);
+	@media (max-width: $mob) {
+		max-width: var($mob);
 		padding: 0 16px;
 	}
 }
@@ -161,7 +174,7 @@ input::-webkit-inner-spin-button {
 		letter-spacing: inherit;
 	}
 
-	@media (max-width: var(--mob)) {
+	@media (max-width: $mob) {
 		font-size: px-to-em(25);
 		line-height: 105%;
 		letter-spacing: -0.75px;
@@ -175,7 +188,7 @@ input::-webkit-inner-spin-button {
 	font-weight: 600;
 	line-height: 130%;
 
-	@media (max-width: var(--mob)) {
+	@media (max-width: var($mob)) {
 		font-size: px-to-em(23);
 	}
 }
@@ -188,31 +201,75 @@ input::-webkit-inner-spin-button {
 	line-height: 120%;
 	text-decoration: none;
 
-	@media (max-width: var(--mob)) {
+	@media (max-width: $mob) {
 		font-size: px-to-em(18);
 	}
 }
 
-.dark-background {
-	background-color: var(--background);
-	position: relative;
-	overflow: hidden;
+.text-card {
+	font-family: Inter;
+	font-size: px-to-em(19);
+	font-style: normal;
+	font-weight: 400;
+	line-height: px-to-per(25, 19);
+	letter-spacing: -0.7px;
 
-	&__abs {
-		width: 414.902px;
-		height: 414.902px;
-		transform: rotate(11.969deg);
-		border-radius: 414.902px;
-		background: var(--linear-puprle);
-		filter: blur(86px);
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-	}
-
-	&__content {
-		position: relative;
-		z-index: 2;
+	@media (max-width: $mob) {
+		font-size: px-to-em(16);
+		line-height: px-to-per(25, 16);
 	}
 }
+
+.modal-title {
+	font-family: Inter;
+	font-size: px-to-em(45);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 105%;
+	letter-spacing: -1.35px;
+}
+
+.modal-text {
+	font-family: Inter;
+	font-size: px-to-em(21);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.input {
+	background-color: var(--white);
+	padding: 15px 20px;
+	border-radius: 10px;
+	color: var(--input-grey);
+	font-family: Inter;
+	font-size: px-to-em(18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: 100%;
+}
+
+// .dark-background {
+// 	background-color: var(--background);
+// 	position: relative;
+// 	overflow: hidden;
+
+// 	&__abs {
+// 		width: 414.902px;
+// 		height: 414.902px;
+// 		transform: rotate(11.969deg);
+// 		border-radius: 414.902px;
+// 		background: var(--linear-puprle);
+// 		filter: blur(86px);
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		z-index: 1;
+// 	}
+
+// 	&__content {
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// }

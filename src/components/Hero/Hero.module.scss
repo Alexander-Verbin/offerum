@@ -1,27 +1,43 @@
 .Hero {
 	display: block;
+	background-color: var(--background);
 
 	&__container {
-		padding-top: 70px;
-		padding-bottom: 136px;
-	}
-
-	&__content {
-		display: flex;
+		padding-top: 218px;
+		padding-bottom: 270px;
 	}
 
 	&__info {
 		display: flex;
 		flex-direction: column;
-		gap: 32px;
-		flex: 0 0 717px;
+		position: relative;
+	}
+
+	&__abs {
+		position: absolute;
+		top: -130px;
+		right: -60px;
+		max-width: 863px;
+	}
+
+	&__man {
+		width: 100%;
+		object-fit: contain;
 	}
 
 	&__title {
 		color: var(--white);
+		max-width: 717px;
 	}
 
 	&__text {
 		color: var(--text-grey);
+		max-width: 499px;
+		margin-top: 32px;
+	}
+
+	&__button {
+		max-width: 331px;
+		margin-top: 67px;
 	}
 }
