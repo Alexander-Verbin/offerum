@@ -1,0 +1,28 @@
+@import "../../scss/mixins.scss";
+.Nav {
+	display: block;
+	flex: 0 0 441px;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	&__link {
+		display: block;
+		color: var(--text-grey);
+		@include transition;
+
+		@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				color: var(--light-green);
+			}
+		}
+	}
+}

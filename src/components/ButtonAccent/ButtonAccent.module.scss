@@ -1,0 +1,33 @@
+@import "../../scss/mixins.scss";
+.ButtonAccent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 0;
+	width: 100%;
+	background-color: transparent;
+	color: var(--white);
+	font-family: Inter;
+	font-size: px-to-em(16);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 15px;
+	border: 1px solid var(--white);
+	cursor: pointer;
+	@include transition;
+
+	&.active {
+		color: var(--light-green);
+		border-color: var(--light-green);
+		backdrop-filter: blur(7.5px);
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			color: var(--light-green);
+			border-color: var(--light-green);
+		}
+	}
+}

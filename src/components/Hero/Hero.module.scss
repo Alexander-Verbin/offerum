@@ -1,0 +1,27 @@
+.Hero {
+	display: block;
+
+	&__container {
+		padding-top: 70px;
+		padding-bottom: 136px;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		flex: 0 0 717px;
+	}
+
+	&__title {
+		color: var(--white);
+	}
+
+	&__text {
+		color: var(--text-grey);
+	}
+}

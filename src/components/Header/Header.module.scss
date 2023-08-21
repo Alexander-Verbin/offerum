@@ -1,0 +1,35 @@
+.Header {
+	display: block;
+
+	&__container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		@media (max-width: --mob) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: block;
+		text-decoration: none;
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex: 0 0 736px;
+	}
+
+	&__button {
+		flex: 0 0 175px;
+	}
+}
