@@ -1,0 +1,62 @@
+////////////////////////обнуление/////////////////////////////////
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	hyphens: auto;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	position: relative;
+	font-style: normal;
+
+	&::after {
+		content: "";
+		width: 414.902px;
+		height: 414.902px;
+		transform: rotate(11.969deg);
+		border-radius: 414.902px;
+		background: var(--linear-puprle);
+		filter: blur(86px);
+		position: absolute;
+		top: -95px;
+		left: 50px;
+		z-index: 1;
+	}
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}

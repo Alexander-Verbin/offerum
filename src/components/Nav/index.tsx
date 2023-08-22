@@ -9,8 +9,8 @@ export const Nav = ({ links }: PropsType) => {
 	return (
 		<nav className={styles.Nav}>
 			<ul className={styles.Nav__list}>
-				{links.map((item) => (
-					<li className={styles.Nav__item}>
+				{links.map((item,index) => (
+					<li key={index} className={styles.Nav__item}>
 						<a className={`${styles.Nav__link} text-primary`} href='#'>
 							{item}
 						</a>

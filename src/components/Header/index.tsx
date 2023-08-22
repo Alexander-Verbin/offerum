@@ -15,7 +15,7 @@ export const Header = () => {
 							viewBox='0 0 128 55'
 							fill='none'
 							xmlns='http://www.w3.org/2000/svg'>
-							<g id='Frame 3296' clip-path='url(#clip0_2_734)'>
+							<g id='Frame 3296' clipPath='url(#clip0_2_734)'>
 								<circle
 									id='Ellipse 26'
 									cx='21.4021'
@@ -48,9 +48,9 @@ export const Header = () => {
 									r='1'
 									gradientUnits='userSpaceOnUse'
 									gradientTransform='translate(21.7179 8.77089) rotate(90.4621) scale(39.1585)'>
-									<stop stop-color='#DEA8FF' />
-									<stop offset='0.445112' stop-color='#9D6AD9' />
-									<stop offset='1' stop-color='#7A2BF6' />
+									<stop stopColor='#DEA8FF' />
+									<stop offset='0.445112' stopColor='#9D6AD9' />
+									<stop offset='1' stopColor='#7A2BF6' />
 								</radialGradient>
 								<radialGradient
 									id='paint1_radial_2_734'
@@ -59,8 +59,8 @@ export const Header = () => {
 									r='1'
 									gradientUnits='userSpaceOnUse'
 									gradientTransform='translate(21.8389 10.37) rotate(80.1061) scale(38.1251)'>
-									<stop stop-color='#E2C1FF' stop-opacity='0.53' />
-									<stop offset='1' stop-color='#853DF2' stop-opacity='0.55' />
+									<stop stopColor='#E2C1FF' stopOpacity='0.53' />
+									<stop offset='1' stopColor='#853DF2' stopOpacity='0.55' />
 								</radialGradient>
 								<clipPath id='clip0_2_734'>
 									<rect width='128' height='55' fill='white' />

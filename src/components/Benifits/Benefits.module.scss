@@ -1,6 +1,107 @@
 .Benefits {
 	display: block;
-	padding-top: 195px;
-	padding-bottom: 190px;
 	background-color: var(--white);
+
+	&__container {
+		padding-top: 195px;
+		padding-bottom: 190px;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 151.89px;
+			height: 151.89px;
+			transform: rotate(-25.732deg);
+			background: var(--radial-purple);
+			top: 100px;
+			right: 138px;
+			position: absolute;
+			border-radius: 50%;
+		}
+	}
+
+	&__content {
+		border-radius: 20px;
+		background: var(--linear-background);
+		padding: 130px 0 150px;
+		width: 100%;
+		position: relative;
+
+		&::after,
+		&::before {
+			content: "";
+			width: 440.008px;
+			height: 440.008px;
+			transform: rotate(11.969deg);
+			border-radius: 440.008px;
+			background: var(--linear-puprle);
+			filter: blur(86px);
+			position: absolute;
+			z-index: 1;
+		}
+
+		&::after {
+			bottom: 0;
+			left: 0;
+		}
+
+		&::before {
+			top: 0;
+			right: 0;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 65px;
+		position: relative;
+		z-index: 2;
+
+		&::after,
+		&::before {
+			position: absolute;
+			border-radius: 50%;
+		}
+
+		&::before {
+			content: "";
+			width: 84.004px;
+			height: 84.004px;
+			transform: rotate(7.766deg);
+			background: var(--radial-blue);
+			top: -22px;
+			left: 170px;
+		}
+
+		&::after {
+			content: "";
+			width: 131.66px;
+			height: 131.66px;
+			transform: rotate(-25.732deg);
+			filter: blur(12px);
+			background: var(--radial-purple);
+			bottom: -17px;
+			right: 140px;
+		}
+	}
+
+	&__title {
+		color: var(--white);
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 70px 50px;
+		max-width: 650px;
+	}
+
+	&__card {
+		flex: 0 0 calc(53% - 50px);
+		height: 310px;
+	}
 }

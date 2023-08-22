@@ -8,16 +8,13 @@ type PropsType = {
 
 export const ButtonAccent = ({ text }: PropsType) => {
 	const [active, setActive] = React.useState(false);
-	const clickAction = (active: boolean) => {
-		setActive(!active);
-	};
 	return (
 		<button
 			type='button'
 			className={
 				active ? `${styles.ButtonAccent} ${styles.active}` : styles.ButtonAccent
 			}
-			onClick={() => clickAction(active)}>
+			onClick={() => setActive(!active)}>
 			{text}
 		</button>
 	);

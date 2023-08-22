@@ -1,0 +1,136 @@
+///////UI-Kit//////////////////////
+
+.container {
+	max-width: $desc;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@media (max-width: $mob) {
+		max-width: $mob;
+		padding: 0 16px;
+	}
+}
+
+.h1 {
+	font-family: Inter;
+	font-size: px-to-em(72);
+	font-weight: 400;
+	line-height: 105%;
+	letter-spacing: -2.16px;
+
+	& .bold {
+		font-weight: 700;
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+		font-style: inherit;
+		letter-spacing: inherit;
+	}
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(25);
+		line-height: 105%;
+		letter-spacing: -0.75px;
+	}
+}
+
+.h2 {
+	font-family: Inter;
+	font-size: px-to-em(45);
+	font-weight: 600;
+	line-height: 130%;
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(23);
+	}
+}
+
+.text-primary {
+	font-family: Inter;
+	font-size: px-to-em(23);
+	font-weight: 400;
+	line-height: 120%;
+	text-decoration: none;
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(18);
+	}
+}
+
+.mt-minus-73 {
+	& img {
+		margin-top: -73px;
+	}
+
+	@media (max-width: calc($desc - 10px)) {
+		& img {
+			margin-top: 0px;
+		}
+	}
+}
+
+.mt-minus-33 {
+	& img {
+		margin-top: -33px;
+	}
+
+	@media (max-width: calc($desc - 10px)) {
+		& img {
+			margin-top: 0px;
+		}
+	}
+}
+
+.text-wrap {
+	& .text-card {
+		text-wrap: balance;
+	}
+}
+
+.jc-c {
+}
+
+.text-card {
+	font-family: Inter;
+	font-size: px-to-em(19);
+	font-weight: 400;
+	line-height: px-to-per(25, 19);
+	letter-spacing: -0.7px;
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(16);
+		line-height: px-to-per(25, 16);
+	}
+}
+
+.modal-title {
+	font-family: Inter;
+	font-size: px-to-em(45);
+	font-weight: 700;
+	line-height: 105%;
+	letter-spacing: -1.35px;
+}
+
+.modal-text {
+	font-family: Inter;
+	font-size: px-to-em(21);
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.input {
+	background-color: var(--white);
+	padding: 15px 20px;
+	border-radius: 10px;
+	color: var(--input-grey);
+	font-family: Inter;
+	font-size: px-to-em(18);
+	font-weight: 400;
+	line-height: normal;
+	width: 100%;
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}

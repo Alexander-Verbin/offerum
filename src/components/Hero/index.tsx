@@ -4,8 +4,12 @@ import manMob from "../../assets/images/manMob.png";
 import man from "../../assets/images/man.png";
 import { ButtonPrimary } from "../ButtonPrimary";
 
-export const Hero = () => {
-	const [open, setOpen] = React.useState(false);
+type PropsType = {
+	openModal: boolean;
+	setOpenModal: (open: boolean) => void;
+};
+
+export const Hero = ({ openModal, setOpenModal }: PropsType) => {
 	return (
 		<section className={styles.Hero}>
 			<div className={`${styles.Hero__container} container`}>
@@ -25,8 +29,8 @@ export const Hero = () => {
 					</p>
 					<div className={styles.Hero__button}>
 						<ButtonPrimary
-							openModal={open}
-							setOpenModal={setOpen}
+							openModal={openModal}
+							setOpenModal={setOpenModal}
 							text='Начать зарабатывать на NFT'
 						/>
 					</div>

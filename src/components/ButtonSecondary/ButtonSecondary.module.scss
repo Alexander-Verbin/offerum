@@ -1,0 +1,17 @@
+@import "../../scss/mixins.scss";
+.ButtonSecondary {
+	font-family: Inter;
+	font-size: px-to-em(18);
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 10px;
+	width: 100%;
+	padding: 15px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--linear-green);
+	border: none;
+	cursor: pointer;
+}
