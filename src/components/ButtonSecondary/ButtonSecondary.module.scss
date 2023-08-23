@@ -1,4 +1,5 @@
 @import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
 .ButtonSecondary {
 	font-family: Inter;
 	font-size: px-to-em(18);
@@ -14,4 +15,8 @@
 	background: var(--linear-green);
 	border: none;
 	cursor: pointer;
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(16);
+	}
 }

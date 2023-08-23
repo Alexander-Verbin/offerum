@@ -1,4 +1,5 @@
 @import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
 .Nav {
 	display: block;
 	flex: 0 0 410px;
@@ -27,6 +28,10 @@
 			&:hover {
 				color: var(--light-green);
 			}
+		}
+
+		@media (max-width: $mob) {
+			font-size: px-to-em(23);
 		}
 	}
 }

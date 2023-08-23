@@ -76,6 +76,12 @@
 	font-weight: 700;
 	line-height: 105%;
 	letter-spacing: -1.35px;
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(23);
+		line-height: 130%;
+		letter-spacing: unset;
+	}
 }
 
 .modal-text {
@@ -83,6 +89,10 @@
 	font-size: px-to-em(21);
 	font-weight: 400;
 	line-height: 120%;
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(18);
+	}
 }
 
 .input {
@@ -99,5 +109,11 @@
 
 	&:focus {
 		outline: none;
+	}
+
+	@media (max-width: $mob) {
+		font-size: px-to-em(14);
+		padding-right: 16px;
+		padding-left: 16px;
 	}
 }

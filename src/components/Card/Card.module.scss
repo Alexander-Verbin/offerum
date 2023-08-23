@@ -1,3 +1,4 @@
+@import "../../scss/variables.scss";
 .Card {
 	display: flex;
 	flex-direction: column;
@@ -13,6 +14,10 @@
 	width: 100%;
 	padding: 20px;
 
+	@media (max-width: $mob) {
+		gap: 20px;
+	}
+
 	&::after {
 		content: "";
 		display: block;
@@ -25,12 +30,24 @@
 		height: calc(100% - 42px);
 		position: absolute;
 		z-index: -1;
+
+		@media (max-width: $mob) {
+			width: calc(100% - 34px);
+			height: calc(100% - 55px);
+			bottom: -17px;
+			left: 17px;
+		}
 	}
 
 	&__image {
 		max-width: 117px;
 		width: 100%;
+		height: auto;
 		object-fit: contain;
+
+		@media (max-width: $mob) {
+			max-width: 87px;
+		}
 	}
 
 	&__text {
