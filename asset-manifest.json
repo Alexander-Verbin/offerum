@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/offerum/static/css/main.01fe36fe.css",
+    "main.js": "/offerum/static/js/main.5adfd4fa.js",
+    "static/js/787.02866eb4.chunk.js": "/offerum/static/js/787.02866eb4.chunk.js",
+    "static/media/man.png": "/offerum/static/media/man.be057da35f5a34c81563.png",
+    "static/media/Inter-Medium.eot": "/offerum/static/media/Inter-Medium.bc3a3377aaae167b0a07.eot",
+    "static/media/Inter-Medium.ttf": "/offerum/static/media/Inter-Medium.7682fdab91479338a4d5.ttf",
+    "static/media/Inter-SemiBold.eot": "/offerum/static/media/Inter-SemiBold.6ebf102171cbaf5d4d05.eot",
+    "static/media/Inter-SemiBold.ttf": "/offerum/static/media/Inter-SemiBold.814c22bad710b7ff6e33.ttf",
+    "static/media/Inter-Bold.eot": "/offerum/static/media/Inter-Bold.b105ffb5b3605ad85dff.eot",
+    "static/media/Inter-Bold.ttf": "/offerum/static/media/Inter-Bold.b70a895538e65c462f5f.ttf",
+    "static/media/Inter-Regular.eot": "/offerum/static/media/Inter-Regular.f5b04bf996cdaa04b4ea.eot",
+    "static/media/Inter-Regular.ttf": "/offerum/static/media/Inter-Regular.991468dd4e43f260e6a4.ttf",
+    "static/media/Inter-Bold.woff": "/offerum/static/media/Inter-Bold.1e547cd04bfe2dae1f98.woff",
+    "static/media/Inter-SemiBold.woff": "/offerum/static/media/Inter-SemiBold.7f6c3678e245486167d9.woff",
+    "static/media/Inter-Medium.woff": "/offerum/static/media/Inter-Medium.44e343ff76a98508d309.woff",
+    "static/media/Inter-Regular.woff": "/offerum/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
+    "static/media/manMob.png": "/offerum/static/media/manMob.6eee15667b37b85489f3.png",
+    "static/media/GTWalsheimPro-Medium.eot": "/offerum/static/media/GTWalsheimPro-Medium.14369c3a451c82dc1923.eot",
+    "static/media/GTWalsheimPro-Medium.ttf": "/offerum/static/media/GTWalsheimPro-Medium.bc56cfc10feb515d6622.ttf",
+    "static/media/Inter-Bold.woff2": "/offerum/static/media/Inter-Bold.c08e610806161507e8e3.woff2",
+    "static/media/Inter-SemiBold.woff2": "/offerum/static/media/Inter-SemiBold.90f5c90fdecd8895f496.woff2",
+    "static/media/Inter-Medium.woff2": "/offerum/static/media/Inter-Medium.01f03178adde434fc9fa.woff2",
+    "static/media/Inter-Regular.woff2": "/offerum/static/media/Inter-Regular.bd097ceff83f90802a12.woff2",
+    "static/media/GTWalsheimPro-Medium.woff": "/offerum/static/media/GTWalsheimPro-Medium.56bd75a22ae9d40f0b48.woff",
+    "static/media/GTWalsheimPro-Medium.woff2": "/offerum/static/media/GTWalsheimPro-Medium.ad6b035f63b8e9185266.woff2",
+    "static/media/smile1.png": "/offerum/static/media/smile1.ed5158dac00d058af4f8.png",
+    "static/media/smile3.png": "/offerum/static/media/smile3.98f0dc71a40333e89095.png",
+    "static/media/smile2.png": "/offerum/static/media/smile2.8a34e0289ba9decdc48e.png",
+    "static/media/smile4.png": "/offerum/static/media/smile4.c44b08005ef2b890d55b.png",
+    "index.html": "/offerum/index.html",
+    "main.01fe36fe.css.map": "/offerum/static/css/main.01fe36fe.css.map",
+    "main.5adfd4fa.js.map": "/offerum/static/js/main.5adfd4fa.js.map",
+    "787.02866eb4.chunk.js.map": "/offerum/static/js/787.02866eb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01fe36fe.css",
+    "static/js/main.5adfd4fa.js"
+  ]
+}
