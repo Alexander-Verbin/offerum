@@ -1,11 +1,32 @@
+@import "../../scss/variables.scss";
 .Benefits {
 	display: block;
 	background-color: var(--white);
+	overflow: hidden;
 
 	&__container {
 		padding-top: 195px;
 		padding-bottom: 190px;
 		position: relative;
+
+		@media (max-width: 1600px) {
+			padding-top: 110px;
+			padding-bottom: 110px;
+		}
+
+		@media (max-width: 1365px) {
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+
+		@media (max-width: 999px) {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+		@media (max-width: $mob) {
+			padding-bottom: 0px;
+		}
 
 		&::after {
 			content: "";
@@ -17,6 +38,11 @@
 			right: 138px;
 			position: absolute;
 			border-radius: 50%;
+
+			@media (max-width: 1365px) {
+				top: 20px;
+				right: 60px;
+			}
 		}
 	}
 
@@ -38,16 +64,31 @@
 			filter: blur(86px);
 			position: absolute;
 			z-index: 1;
+
+			@media (max-width: 1365px) {
+				width: 238px;
+				height: 238px;
+			}
 		}
 
 		&::after {
 			bottom: 0;
 			left: 0;
+
+			@media (max-width: 1365px) {
+				bottom: -20px;
+				left: 40px;
+			}
 		}
 
 		&::before {
 			top: 0;
 			right: 0;
+
+			@media (max-width: 1365px) {
+				top: 20px;
+				right: -60px;
+			}
 		}
 	}
 
@@ -74,6 +115,10 @@
 			background: var(--radial-blue);
 			top: -22px;
 			left: 170px;
+
+			@media (max-width: 1365px) {
+				left: 40px;
+			}
 		}
 
 		&::after {
@@ -103,5 +148,29 @@
 	&__card {
 		flex: 0 0 calc(53% - 50px);
 		height: 310px;
+
+		&:nth-child(2),
+		&:nth-child(3) {
+			& img {
+				margin-top: -33px;
+
+				@media (max-width: calc($desc - 10px)) {
+					margin-top: 0;
+				}
+			}
+		}
+		&:nth-child(4) {
+			& img {
+				margin-top: -73px;
+
+				@media (max-width: calc($desc - 10px)) {
+					margin-top: 0;
+				}
+			}
+
+			p {
+				text-wrap: balance;
+			}
+		}
 	}
 }

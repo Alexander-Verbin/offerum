@@ -3,6 +3,10 @@
 	display: block;
 	flex: 0 0 410px;
 
+	@media (max-width: 999px) {
+		flex: 0 0 335px;
+	}
+
 	&__list {
 		display: flex;
 		align-items: center;

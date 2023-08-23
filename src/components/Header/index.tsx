@@ -4,6 +4,7 @@ import { Nav } from "../Nav";
 import { ButtonAccent } from "../ButtonAccent";
 
 export const Header = () => {
+	const [openMenu, setOpenMenu] = React.useState(false);
 	return (
 		<header className={styles.Header}>
 			<div className={`${styles.Header__container} container`}>
@@ -74,6 +75,18 @@ export const Header = () => {
 							<ButtonAccent text='Личный кабинет' />
 						</div>
 					</div>
+					<button
+						onClick={() => {
+							setOpenMenu(!openMenu);
+						}}
+						type='button'
+						className={
+							openMenu
+								? `${styles.Header__burger} ${styles.open}`
+								: styles.Header__burger
+						}>
+						<span className={styles.Header__burger_item}></span>
+					</button>
 				</div>
 			</div>
 		</header>

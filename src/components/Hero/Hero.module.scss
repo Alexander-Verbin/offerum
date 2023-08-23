@@ -1,3 +1,4 @@
+@import "../../scss/variables.scss";
 .Hero {
 	display: block;
 	background-color: var(--background);
@@ -5,12 +6,41 @@
 	&__container {
 		padding-top: 189px;
 		padding-bottom: 270px;
+
+		@media (max-width: 1600px) {
+			padding-top: 90px;
+			padding-bottom: 100px;
+		}
+
+		@media (max-width: 1365px) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		@media (max-width: 999px) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+
+		@media (max-width: $mob) {
+			padding-top: 28px;
+			padding-bottom: 50px;
+		}
 	}
 
 	&__info {
 		display: flex;
 		flex-direction: column;
 		position: relative;
+		z-index: 2;
+
+		@media (max-width: 1365px) {
+			align-items: center;
+		}
+
+		@media (max-width: $mob) {
+			z-index: 0;
+		}
 	}
 
 	&__abs {
@@ -18,6 +48,18 @@
 		top: -145px;
 		right: -104px;
 		max-width: 925px;
+
+		@media (max-width: 1600px) {
+			max-width: 50%;
+			right: 60px;
+			top: -85px;
+		}
+
+		@media (max-width: 1365px) {
+			position: static;
+			margin-top: 16px;
+			max-width: 80%;
+		}
 	}
 
 	&__man {
@@ -28,16 +70,36 @@
 	&__title {
 		color: var(--white);
 		max-width: 717px;
+
+		@media (max-width: 1365px) {
+			text-align: center;
+		}
 	}
 
 	&__text {
 		color: var(--text-grey);
 		max-width: 499px;
 		margin-top: 32px;
+
+		@media (max-width: 1365px) {
+			margin-top: 11px;
+			max-width: 100%;
+			text-align: center;
+		}
+
+		@media (max-width: $mob) {
+			text-wrap: balance;
+		}
 	}
 
 	&__button {
 		max-width: 331px;
+		width: 100%;
 		margin-top: 76px;
+
+		@media (max-width: $mob) {
+			margin-top: 40px;
+			max-width: 277px;
+		}
 	}
 }

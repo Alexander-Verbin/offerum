@@ -1,0 +1,42 @@
+//////////////////////////цвета//////////////////////////
+
+:root {
+	--white: #fff;
+	--linear-green: linear-gradient(141deg, #1dd844 0%, #cbf62e 100%);
+	--linear-light-green: linear-gradient(
+		171deg,
+		rgba(195, 243, 58, 0.25) 0%,
+		rgba(41, 209, 89, 0.25)
+	);
+	--linear-puprle: linear-gradient(
+		171deg,
+		rgba(95, 56, 255, 0.25) 0%,
+		rgba(255, 14, 222, 0.25) 100%
+	);
+	--radial-blue: radial-gradient(
+		66.01% 76.73% at 65.32% 77.65%,
+		#045dfa 0%,
+		#0fc1d7 83.16%,
+		#06f6c7 100%
+	);
+	--radial-purple: radial-gradient(
+		95.39% 95.39% at 50.77% 4.62%,
+		#dea8ff 0%,
+		#9d6ad9 44.51%,
+		#7a2bf6 100%
+	);
+	--radial-modal-background: radial-gradient(
+		207.54% 112.44% at 15.58% -40.39%,
+		#323e51 0%,
+		#1d2532 100%
+	);
+	--modal-backdrop: rgba(48, 9, 97, 0.3);
+	--linear-background: linear-gradient(203deg, #323e51 0%, #1d2532 100%);
+	--card-background: rgba(51, 62, 81, 1);
+	--background: #1d2532;
+	--dark: #293344;
+	--light-green: #c3f33b;
+	--text-grey: #cecece;
+	--input-grey: #757575;
+	--button-text: #242424;
+}

@@ -15,12 +15,12 @@ export const Hero = ({ openModal, setOpenModal }: PropsType) => {
 			<div className={`${styles.Hero__container} container`}>
 				<div className={styles.Hero__info}>
 					<h1 className={`${styles.Hero__title} h1`}>
-						Не упусти возможность войти в{" "}
-						<b className='bold'>прибыльную нишу</b>
+						Не упусти
+						<br /> возможность войти в <b className='bold'>прибыльную нишу</b>
 					</h1>
 					<div className={styles.Hero__abs}>
 						<picture>
-							<source media='(max-width: 767px)' srcSet={manMob} />
+							<source media='(max-width: 768px)' srcSet={manMob} />
 							<img className={styles.Hero__man} src={man} alt='man' />
 						</picture>
 					</div>

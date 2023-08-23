@@ -22,19 +22,19 @@ export const Benifits = () => {
 									text='Откроешь свой первый криптокошелек и научишься с ним работать'
 								/>
 							</div>
-							<div className={`${style.Benefits__card} mt-minus-33`}>
+							<div className={style.Benefits__card}>
 								<Card
 									imgSrc={smile2}
 									text='Поймёшь, как выбирать правильные дропы'
 								/>
 							</div>
-							<div className={`${style.Benefits__card} mt-minus-33`}>
+							<div className={style.Benefits__card}>
 								<Card
 									imgSrc={smile3}
 									text='Построишь план по&nbsp;быстрому приумножению заработанных средств'
 								/>
 							</div>
-							<div className={`${style.Benefits__card} text-wrap mt-minus-73`}>
+							<div className={style.Benefits__card}>
 								<Card
 									imgSrc={smile4}
 									text='Узнаешь кто такие холдеры и флипперы'

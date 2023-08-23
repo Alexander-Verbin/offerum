@@ -57,39 +57,6 @@
 	}
 }
 
-.mt-minus-73 {
-	& img {
-		margin-top: -73px;
-	}
-
-	@media (max-width: calc($desc - 10px)) {
-		& img {
-			margin-top: 0px;
-		}
-	}
-}
-
-.mt-minus-33 {
-	& img {
-		margin-top: -33px;
-	}
-
-	@media (max-width: calc($desc - 10px)) {
-		& img {
-			margin-top: 0px;
-		}
-	}
-}
-
-.text-wrap {
-	& .text-card {
-		text-wrap: balance;
-	}
-}
-
-.jc-c {
-}
-
 .text-card {
 	font-family: Inter;
 	font-size: px-to-em(19);

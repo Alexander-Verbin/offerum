@@ -4,9 +4,9 @@
 *::after {
 	box-sizing: border-box;
 	-webkit-tap-highlight-color: transparent;
-	hyphens: auto;
 	margin: 0;
 	padding: 0;
+	hyphens: auto;
 }
 
 body {
@@ -15,20 +15,8 @@ body {
 	text-rendering: optimizeSpeed;
 	position: relative;
 	font-style: normal;
-
-	&::after {
-		content: "";
-		width: 414.902px;
-		height: 414.902px;
-		transform: rotate(11.969deg);
-		border-radius: 414.902px;
-		background: var(--linear-puprle);
-		filter: blur(86px);
-		position: absolute;
-		top: -95px;
-		left: 50px;
-		z-index: 1;
-	}
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ul,
