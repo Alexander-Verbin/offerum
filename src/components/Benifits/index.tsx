@@ -1,10 +1,10 @@
 import React from "react";
 import style from "./Benefits.module.scss";
 import { Card } from "../Card";
-import smile1 from "../../assets/images/smile1.png";
-import smile2 from "../../assets/images/smile2.png";
-import smile3 from "../../assets/images/smile3.png";
-import smile4 from "../../assets/images/smile4.png";
+import smile1 from "../../assets/images/smile1.webp";
+import smile2 from "../../assets/images/smile2.webp";
+import smile3 from "../../assets/images/smile3.webp";
+import smile4 from "../../assets/images/smile4.webp";
 
 export const Benifits = () => {
 	return (

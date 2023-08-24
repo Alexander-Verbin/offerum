@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Hero.module.scss";
-import manMob from "../../assets/images/manMob.png";
-import man from "../../assets/images/man.png";
+import manMob from "../../assets/images/manMob.webp";
+import man from "../../assets/images/man.webp";
 import { ButtonPrimary } from "../ButtonPrimary";
 
 type PropsType = {
