@@ -6,8 +6,6 @@ import { Modal } from "./components/Modal";
 
 export const App = () => {
 	const [open, setOpen] = React.useState(false);
-
-	console.log(open);
 	return (
 		<div className='App'>
 			<Header />

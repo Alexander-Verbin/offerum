@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ButtonAccent.module.scss";
+import style from "./ButtonAccent.module.scss";
 
 type PropsType = {
 	text: string;
@@ -12,7 +12,7 @@ export const ButtonAccent = ({ text }: PropsType) => {
 		<button
 			type='button'
 			className={
-				active ? `${styles.ButtonAccent} ${styles.active}` : styles.ButtonAccent
+				active ? `${style.ButtonAccent} ${style.active}` : style.ButtonAccent
 			}
 			onClick={() => setActive(!active)}>
 			{text}

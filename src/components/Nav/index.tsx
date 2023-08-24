@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Nav.module.scss";
+import style from "./Nav.module.scss";
 
 type PropsType = {
 	links: Array<string>;
@@ -7,11 +7,11 @@ type PropsType = {
 
 export const Nav = ({ links }: PropsType) => {
 	return (
-		<nav className={styles.Nav}>
-			<ul className={styles.Nav__list}>
-				{links.map((item,index) => (
-					<li key={index} className={styles.Nav__item}>
-						<a className={`${styles.Nav__link} text-primary`} href='#'>
+		<nav className={style.Nav}>
+			<ul className={style.Nav__list}>
+				{links.map((item, index) => (
+					<li key={index} className={style.Nav__item}>
+						<a className={`${style.Nav__link} text-primary`} href='#'>
 							{item}
 						</a>
 					</li>

@@ -1,5 +1,5 @@
 @use "sass:math";
-/* Стандартный transition для hover-анимаций */
+/* Стандартный transition */
 @mixin transition {
 	transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	-webkit-transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);

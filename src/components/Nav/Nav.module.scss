@@ -4,20 +4,33 @@
 	display: block;
 	flex: 0 0 410px;
 
-	@media (max-width: 999px) {
+	@media (max-width: $adaptiv-3) {
 		flex: 0 0 335px;
+	}
+
+	@media (max-width: $mob) {
+		flex: 0 0 auto;
 	}
 
 	&__list {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media (max-width: $mob) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 20px;
+		}
 	}
 
 	&__item {
 		display: block;
 		padding-top: 10px;
 		padding-bottom: 10px;
+
+		@media (max-width: $mob) {
+			padding: 0;
+		}
 	}
 	&__link {
 		display: block;

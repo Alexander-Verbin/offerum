@@ -18,7 +18,7 @@ body::after {
 	left: 50px;
 	z-index: 1;
 
-	@media (max-width: 1365px) {
+	@media (max-width: $adaptiv-2) {
 		width: 238px;
 		height: 238px;
 		left: -60px;

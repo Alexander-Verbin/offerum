@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ButtonPrimary.module.scss";
+import style from "./ButtonPrimary.module.scss";
 
 type PropsType = {
 	text: string;
@@ -12,7 +12,7 @@ export const ButtonPrimary = ({ text, openModal, setOpenModal }: PropsType) => {
 		<button
 			onClick={() => setOpenModal(!openModal)}
 			type='button'
-			className={styles.ButtonPrimory}>
+			className={style.ButtonPrimory}>
 			{text}
 		</button>
 	);

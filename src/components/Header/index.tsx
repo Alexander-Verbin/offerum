@@ -1,15 +1,16 @@
 import React from "react";
-import styles from "./Header.module.scss";
+import style from "./Header.module.scss";
 import { Nav } from "../Nav";
 import { ButtonAccent } from "../ButtonAccent";
 
 export const Header = () => {
 	const [openMenu, setOpenMenu] = React.useState(false);
 	return (
-		<header className={styles.Header}>
-			<div className={`${styles.Header__container} container`}>
-				<div className={styles.Header__content}>
-					<a href='/' className={styles.Header__logo}>
+		<header
+			className={openMenu ? `${style.Header} ${style.active}` : style.Header}>
+			<div className={`${style.Header__container} container`}>
+				<div className={style.Header__content}>
+					<a href='/' className={style.Header__logo}>
 						<svg
 							width='128'
 							height='55'
@@ -69,9 +70,9 @@ export const Header = () => {
 							</defs>
 						</svg>
 					</a>
-					<div className={styles.Header__controls}>
+					<div className={style.Header__controls}>
 						<Nav links={["Главная", "Что даст обучение"]} />
-						<div className={styles.Header__button}>
+						<div className={style.Header__button}>
 							<ButtonAccent text='Личный кабинет' />
 						</div>
 					</div>
@@ -82,10 +83,10 @@ export const Header = () => {
 						type='button'
 						className={
 							openMenu
-								? `${styles.Header__burger} ${styles.open}`
-								: styles.Header__burger
+								? `${style.Header__burger} ${style.open}`
+								: style.Header__burger
 						}>
-						<span className={styles.Header__burger_item}></span>
+						<span className={style.Header__burger_item}></span>
 					</button>
 				</div>
 			</div>
