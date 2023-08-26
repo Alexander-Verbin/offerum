@@ -20,7 +20,11 @@ export const Hero = ({ openModal, setOpenModal }: PropsType) => {
 					</h1>
 					<div className={style.Hero__abs}>
 						<picture>
-							<source media='(max-width: 767px)' srcSet={manMob} />
+							<source
+								type='image/webp'
+								media='(max-width: 767px)'
+								srcSet={manMob}
+							/>
 							<img
 								loading='lazy'
 								className={style.Hero__man}
