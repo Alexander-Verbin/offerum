@@ -6,17 +6,38 @@
 	-webkit-tap-highlight-color: transparent;
 	margin: 0;
 	padding: 0;
-	hyphens: auto;
 }
 
 body {
-	min-height: 100vh;
+	min-height: 100dvh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	position: relative;
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+header,
+footer,
+section,
+main,
+aside {
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a {
+	overflow-wrap: break-word;
+	hyphens: auto;
 }
 
 ul,
@@ -31,6 +52,11 @@ a:not([class]) {
 img {
 	max-width: 100%;
 	display: block;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+	border-style: none;
 }
 
 input,
@@ -47,4 +73,9 @@ input[type="number"] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
+}
+
+input:focus,
+button:focus {
+	outline: none;
 }

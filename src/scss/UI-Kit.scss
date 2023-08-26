@@ -107,10 +107,6 @@
 	width: 100%;
 	border: none;
 
-	&:focus {
-		outline: none;
-	}
-
 	@media (max-width: $mob) {
 		font-size: px-to-em(14);
 		padding-right: 16px;

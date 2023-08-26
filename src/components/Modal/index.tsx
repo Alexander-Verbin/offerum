@@ -45,7 +45,8 @@ export const Modal = ({ openModal, setOpenModal }: PropsType) => {
 							<input
 								onChange={(e) => setValue(e.target.value)}
 								className={`${style.Modal__input} input`}
-								type='text'
+								name='Email'
+								type='email'
 								placeholder='Ваш email'
 								value={value}
 							/>
