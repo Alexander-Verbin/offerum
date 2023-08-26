@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/offerum/static/css/main.d2b53bbb.css",
-    "main.js": "/offerum/static/js/main.df228278.js",
+    "main.css": "/offerum/static/css/main.6e52cb93.css",
+    "main.js": "/offerum/static/js/main.827341d4.js",
     "static/js/787.02866eb4.chunk.js": "/offerum/static/js/787.02866eb4.chunk.js",
     "static/media/man.webp": "/offerum/static/media/man.adecd030e33a12303d67.webp",
     "static/media/Inter-Medium.eot": "/offerum/static/media/Inter-Medium.bc3a3377aaae167b0a07.eot",
@@ -30,12 +30,12 @@
     "static/media/smile2.webp": "/offerum/static/media/smile2.99f5aeb26ba75545bb7a.webp",
     "static/media/smile4.webp": "/offerum/static/media/smile4.b6444a03adf7d7cb7d7c.webp",
     "index.html": "/offerum/index.html",
-    "main.d2b53bbb.css.map": "/offerum/static/css/main.d2b53bbb.css.map",
-    "main.df228278.js.map": "/offerum/static/js/main.df228278.js.map",
+    "main.6e52cb93.css.map": "/offerum/static/css/main.6e52cb93.css.map",
+    "main.827341d4.js.map": "/offerum/static/js/main.827341d4.js.map",
     "787.02866eb4.chunk.js.map": "/offerum/static/js/787.02866eb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2b53bbb.css",
-    "static/js/main.df228278.js"
+    "static/css/main.6e52cb93.css",
+    "static/js/main.827341d4.js"
   ]
 }
